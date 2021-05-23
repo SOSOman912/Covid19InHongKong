@@ -1,0 +1,254 @@
+body {
+	background-color:#F4F3F2;
+}
+
+.container-fluid {
+	padding: 0px;
+	margin: 0px;
+	height:100%;
+}
+
+h1,h2,h3,h4,h5 {
+	padding:0px;
+	margin: 0px;
+	font-family: 'Mukta', sans-serif;
+}
+
+#navbar {
+	background-color:#00203FFF;
+	width:100%;
+	height:5%;
+	color:white;
+	display:flex;
+}
+
+#navbar h1 {
+	width:287px;
+}
+
+
+
+#timercontainer {
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock {
+	padding:20px;
+    color: white;
+    font-size: 36px;
+    font-family: 'Mukta', sans-serif;
+}
+
+#Section1 {
+	display:flex;
+}
+
+#sidebar {
+	background-color:#00203FFF;
+	width:291px;
+	height:95vh;
+}
+
+#sidebar ul {
+	padding:0px;
+	width:291px;
+	cursor:pointer;
+}
+
+#sidebar ul li {
+	width:291px;
+	color:white;
+	font-size:20px;
+	list-style: none;
+	padding:20px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#sidebar ul li:hover {
+	border-left:5px solid white;
+}
+
+#content {
+	background-color:#F4F3F2;
+	width:100%;
+	height:100%;
+	padding:20px;
+}
+
+#DataBoardContainer {
+	width:100%;
+	height:20%;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 300px;
+
+}
+
+.DataBoradData{
+	margin:3%;
+	padding:10px;
+	background-color:white;
+	flex-direction: column;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.DataBoradTitle{
+	padding:20px;
+}
+
+#DataBoard1Title{
+	background-color:#FF6060;
+	color: white;
+	line-height: 1rem;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#DataBoard2Title{
+	background-color:#FF9800;
+	color: white;
+	line-height: 1rem;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#DataBoard3Title{
+	background-color:#3DADA7;
+	color: white;
+	line-height: 1rem;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.DataBoardContent {
+	height:50%;
+	width:100%;
+}
+
+#DataBoard1Content{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:#FF6060;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size:80px;
+}
+
+#DataBoard2Content{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:#FF9800;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size:80px;
+}
+
+#DataBoard3Content{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:#3DADA7;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size:80px;
+}
+
+#DataBoard1Status{
+	height:10%;
+	text-align: center;
+	color:#FF6060;
+}
+
+#DataBoard2Status{
+	height:10%;
+	text-align: center;
+	color:#FF9800;
+}
+
+#DataBoard3Status{
+	height:10%;
+	text-align: center;
+	color:#3DADA7;
+}
+
+#LatestInfectedContainer {
+	padding:10px;
+	margin:1%;
+	width:98%;
+	background-color:white;
+	height:30%;
+}
+
+.InfectedInformation2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.2fr;
+}
+
+.InfectedInformation {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+#LineChart1 {
+	margin:1%;
+	width:98%;
+	height:800px;
+	background-color:white;
+}
+
+#buttonList {
+	display:flex;
+	align-items: center;
+	margin:1%;
+	width:98%;
+	height:10%;
+}
+
+.Chart1Button {
+	width:15%;
+	height:50px;
+	font-size:20px;
+	text-align: center;
+	border-radius: 6px;
+	color: white;
+	font-family: 'Mukta', sans-serif;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	cursor:pointer;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color:white;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1244px) {
+
+	#DataBoardContainer {
+	width:90%;
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 300px;
+
+	}
+
+	.DataBoradData{
+	margin:30px;
+	padding:10px;
+	background-color:white;
+	flex-direction: column;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}	
+}

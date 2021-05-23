@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script src="//d3js.org/topojson.v3.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/homepage.styles.css">
+	<title>COVID_19 SITUATION TRACKING WEBSITE</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav id="navbar">
+			<h1 id ="Title" style="min-width:260px; padding:20px; width:291px;">COVID_19 IN HK </h1>
+			<div id="timercontainer" >
+				<div id="MyClockDisplay" class="clock" onload="showTime()">asdf</div>
+			</div>
+		</nav>
+		<section id="Section1">
+			<nav id="sidebar">
+				<ul  id="homeSubmenu">
+					<li>
+					<a href="/">
+						COVID_19 Status
+					</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="content">
+				<div id="DataBoardContainer">
+					<div id="DataBoard1" class="DataBoradData">
+						<h2 id="DataBoard1Title" class="DataBoradTitle">Number Of Confirmed Cases</h2>
+						<div id="DataBoard1Content" class="DataBoardContent"></div>
+						<div id="DataBoard1Status" class="DataBoardContent"></div>
+					</div>
+					<div id="DataBoard2" class="DataBoradData">
+						<h2 id="DataBoard2Title" class="DataBoradTitle">Number of death cases</h2>
+						<div id="DataBoard2Content" class="DataBoardContent"></div>
+						<div id="DataBoard2Status" class="DataBoardContent"></div>
+					</div>
+					<div id="DataBoard3" class="DataBoradData">
+						<h2 id="DataBoard3Title" class="DataBoradTitle">Number of discharge cases</h2>
+						<div id="DataBoard3Content" class="DataBoardContent"></div>
+						<div id="DataBoard3Status" class="DataBoardContent"></div>
+					</div>
+				</div>
+				<div id="LatestInfectedContainer">
+					<h4 style="margin-bottom: 10px">Latest Infected Information</h4>
+					<div class=InfectedInformation2>
+						<h5>Age</h5>
+						<h5>Case classification</h5>
+						<h5>Case no</h5>
+						<h5>Confirmed/probable</h5>
+						<h5>Date of onset</h5>
+						<h5>Gender</h5>
+						<h5>HK/Non-hk resident</h5>
+						<h5>Status</h5>
+						<h5>Report date</h5>
+					</div>
+					<hr>
+				</div>
+				<div id="buttonList">
+					<button onclick="makeLineChart('Number of confirmed cases')" class="Chart1Button" style="background-color:#2D6FAE;">Number of confirmed cases</button>
+					<button onclick="makeLineChart('Number of death cases')" class="Chart1Button" style="background-color:#D44946;">Number of death cases</button>
+					<button class="Chart1Button" onclick="makeLineChart('Number of discharge cases')" style="background-color:#F0B719;">Number of discharge cases</button>
+				</div>
+				<div id="LineChart1">
+
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="/js/homepage.js" type="text/javascript"></script>
+</body>
+</html>
