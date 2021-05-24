@@ -31,8 +31,6 @@ function makeBarChart (_targetInfo) {
             d["Age"] = ">60";
         }
 
-        return Object1;
-
     }).then(data => {
             console.log(data);
             // color = d3.scaleOrdinal().domain(data)

@@ -1,5 +1,3 @@
-
-
 function UpdateBoard () {
 	const DataBoard1Content = document.getElementById('DataBoard1Content');
 	const DataBoard1Status = document.getElementById('DataBoard1Status');

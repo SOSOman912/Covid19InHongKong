@@ -45,7 +45,7 @@ h1,h2,h3,h4,h5 {
 
 #Section1 {
 	display:flex;
-	height:1260px;
+	height:1260	px;
 }
 
 #sidebar {
@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5 {
 	bottom:0;
 	background-color:#00203FFF;
 	width:291px;
-	height:100%;
+	height:100vh;
 }
 
 #sidebar ul {
@@ -90,7 +90,6 @@ h1,h2,h3,h4,h5 {
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 300px;
-
 }
 
 .DataBoradData{
@@ -238,15 +237,15 @@ a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 
-@media only screen and (max-width: 1244px) {
+@media only screen and (max-width: 1920px) {
 
 	#DataBoardContainer {
-	width:90%;
+	width:100%;
+	height:100%;
 	display:grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 300px;
-
-	}
+}
 
 	.DataBoradData{
 	margin:30px;
@@ -256,5 +255,16 @@ a:link, a:visited, a:hover, a:active {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-}	
+	}	
+}
+
+@media only screen and (max-width: 1440px) {
+
+		#DataBoardContainer {
+		width:100%;
+		height:100%;
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 300px;
+	}
 }
