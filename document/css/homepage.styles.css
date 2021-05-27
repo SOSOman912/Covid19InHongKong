@@ -86,6 +86,7 @@ h1,h2,h3,h4,h5 {
 
 #DataBoardContainer {
 	width:100%;
+	min-width:1050px;
 	height:300px;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -93,6 +94,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .DataBoradData{
+	min-width:1050px;
 	margin:3%;
 	padding:10px;
 	background-color:white;
@@ -187,7 +189,8 @@ h1,h2,h3,h4,h5 {
 	padding:10px;
 	margin:30px;
 	background-color:white;
-	height:400px;
+	height:350px;
+	min-width:1050px;
 }
 
 .InfectedInformation2 {
@@ -205,19 +208,20 @@ h1,h2,h3,h4,h5 {
 #LineChart1 {
 	margin:30px;
 	height:800px;
+	min-width:1050px;
 	background-color:white;
 }
 
 #buttonList {
 	display:flex;
 	align-items: center;
+	justify-content: space-between;
 	margin:30px;
-	width:98%;
 	height:100px;
 }
 
 .Chart1Button {
-	width:15%;
+	width:30%;
 	height:50px;
 	font-size:20px;
 	text-align: center;
