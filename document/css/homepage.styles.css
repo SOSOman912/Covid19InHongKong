@@ -86,7 +86,6 @@ h1,h2,h3,h4,h5 {
 
 #DataBoardContainer {
 	width:100%;
-	min-width:1050px;
 	height:300px;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -94,7 +93,6 @@ h1,h2,h3,h4,h5 {
 }
 
 .DataBoradData{
-	min-width:1050px;
 	margin:3%;
 	padding:10px;
 	background-color:white;
@@ -263,6 +261,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 @media only screen and (max-width: 1440px) {
+
+		.DataBoradData{
+			min-width: 1050px;
+	}
 
 		#DataBoardContainer {
 		width:100%;
